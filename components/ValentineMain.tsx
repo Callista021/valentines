@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect, useRef } from 'react';
-
+import couplePhoto from '../assets/photo.jpg';
 interface ValentineMainProps {
   onComplete: () => void;
 }
@@ -66,10 +66,14 @@ const ValentineMain: React.FC<ValentineMainProps> = ({ onComplete }) => {
         </div>
       )}
 
-      {/* Optional Photo Placeholder */}
-      <div className="mb-8 w-32 h-32 md:w-40 md:h-40 bg-pink-100 rounded-2xl flex items-center justify-center text-5xl shadow-inner border-2 border-pink-200 animate-in zoom-in duration-700">
-        📸
-      </div>
+      {/* Our Photo */}
+<div className="mb-8 w-32 h-32 md:w-40 md:h-40 rounded-2xl overflow-hidden shadow-inner border-2 border-pink-200 animate-in zoom-in duration-700">
+  <img 
+    src={couplePhoto} 
+    alt="Our Photo"
+    className="w-full h-full object-cover"
+  />
+</div>
 
       <h1 className="text-3xl md:text-5xl font-black text-red-600 mb-16 h-24 flex items-center justify-center">
         {titles[titleIndex]}

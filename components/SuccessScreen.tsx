@@ -14,10 +14,10 @@ const SuccessScreen: React.FC<SuccessScreenProps> = ({ onComplete }) => {
       {!giftOpened ? (
         <div className="animate-in fade-in zoom-in duration-500">
           <h2 className="text-4xl font-black text-red-600 mb-8">
-            HELL YEAH! 💖
+            OMG, YEAH! 💖
           </h2>
           <p className="text-xl text-red-400 font-bold mb-12">
-            Bubu knew you'd say yes. Eventually. 😌
+            I knew you'd say yes. Eventually. 😌
           </p>
           <div className="flex justify-center">
             <GiftBox onOpen={() => setGiftOpened(true)} />
@@ -28,7 +28,7 @@ const SuccessScreen: React.FC<SuccessScreenProps> = ({ onComplete }) => {
           <h3 className="text-3xl font-black text-red-600 mb-6">Bubu's Note 💌</h3>
           <div className="text-left space-y-6 text-slate-700 text-lg font-bold leading-relaxed">
             <p>
-              First Valentine. Different cities. Same heart.
+              2026 Valentine. Different cities. Same heart.
             </p>
             <p className="text-red-500">
               Kathmandu ↔ Butwal
